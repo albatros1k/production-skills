@@ -4,6 +4,7 @@
     "noImplicitAny": true,
     "module": "ESNext",
     "target": "es5",
+    "baseUrl": ".",
     // to allow tsx syntax
     "jsx": "react",
     "allowJs": true,
