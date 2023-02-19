@@ -1,13 +1,9 @@
-import { FC, Fragment } from 'react'
+import { FC, Fragment } from 'react';
 
-interface CounterProps {
-	
-}
+import classes from './Counter.module.scss';
 
-export const Counter: FC<CounterProps> = ({  }) => {
-	return (
-		<Fragment>
-		 Counter
-		</Fragment>
-	)
-}
+interface CounterProps {}
+
+export const Counter: FC<CounterProps> = ({}) => {
+  return <div className={classes.button}>Counter</div>;
+};
