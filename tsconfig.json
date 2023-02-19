@@ -6,7 +6,7 @@
     "target": "es5",
     "baseUrl": ".",
     // to allow tsx syntax
-    "jsx": "react",
+    "jsx": "react-jsx",
     "allowJs": true,
     "moduleResolution": "node",
     //ES modules instead of common js
