@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "es5",
+    // to allow tsx syntax
+    "jsx": "react",
+    "allowJs": true,
+    "moduleResolution": "node",
+    //ES modules instead of common js
+    "esModuleInterop": true,
+    // without * as
+    "allowSyntheticDefaultImports": true
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
