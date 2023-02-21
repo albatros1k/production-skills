@@ -4,7 +4,7 @@
     "noImplicitAny": true,
     "module": "ESNext",
     "target": "es5",
-    "baseUrl": ".",
+
     // to allow tsx syntax
     "jsx": "react-jsx",
     "allowJs": true,
@@ -12,7 +12,11 @@
     //ES modules instead of common js
     "esModuleInterop": true,
     // without * as
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    }
   },
   "ts-node": {
     "compilerOptions": {
