@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 
 import { AboutPageAsync } from './components/AboutPage/AboutPage.async';
 import { MainPageAsync } from './components/MainPage/MainPage.async';
+import { classNames } from './helpers/classNames/classNames';
 import './styles/index.scss';
 
 import { useTheme } from './theme/useTheme';
@@ -12,7 +13,7 @@ const App: FC = () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className={`app ${theme}`}>
+    <div className={classNames('app', {}, [theme])}>
       <button onClick={toggleTheme}>Toggle</button>
       <Link to='/'>Main </Link>
       <Link to='/about'>About</Link>
