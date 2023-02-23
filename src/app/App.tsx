@@ -3,6 +3,8 @@ import { FC } from 'react';
 import { useTheme } from 'app/providers/ThemeProvider/lib/useTheme';
 import { AppRouter } from 'app/providers/router';
 import { Navbar } from 'widgets/Navbar';
+import { Sidebar } from 'widgets/Sidebar';
+
 import { classNames } from 'shared/lib/classNames/classNames';
 
 import 'app/styles/index.scss';
@@ -13,7 +15,10 @@ const App: FC = () => {
   return (
     <div className={classNames('app', {}, [theme])}>
       <Navbar />
-      <AppRouter />
+      <div className='content-page'>
+        <Sidebar />
+        <AppRouter />
+      </div>
     </div>
   );
 };
