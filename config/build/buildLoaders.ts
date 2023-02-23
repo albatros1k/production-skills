@@ -3,9 +3,19 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 import { BuildOptions } from './types/config';
 
-export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
+export function buildLoaders({ isDev, paths }: BuildOptions): webpack.RuleSetRule[] {
+  const imgLoader: webpack.RuleSetRule = {
+    test: /\.(png|jpg|jpeg|gif|woff)$/i,
+    type: 'asset/resource',
+  };
+
+  const svgLoader: webpack.RuleSetRule = {
+    test: /\.svg$/,
+    use: ['@svgr/webpack'],
+  };
+
   // For tsx it's ok , but for js we need Babel for jsx
-  const tsLoader = {
+  const tsLoader: webpack.RuleSetRule = {
     test: /\.tsx?$/,
     use: 'ts-loader',
     exclude: /node_modules/,
@@ -28,5 +38,5 @@ export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     ],
   };
 
-  return [tsLoader, cssLoaders];
+  return [svgLoader, imgLoader, tsLoader, cssLoaders];
 }

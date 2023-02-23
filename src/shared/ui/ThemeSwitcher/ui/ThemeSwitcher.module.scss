@@ -1,0 +1,16 @@
+.ThemeSwitcher {
+}
+
+.dark {
+  path {
+    fill: #0115c6;
+  }
+}
+
+.light {
+  &.light {
+    path {
+      fill: #ffc700;
+    }
+  }
+}

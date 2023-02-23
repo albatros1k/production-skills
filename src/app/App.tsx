@@ -8,13 +8,12 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import 'app/styles/index.scss';
 
 const App: FC = () => {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <div className={classNames('app', {}, [theme])}>
       <Navbar />
       <AppRouter />
-      <button onClick={toggleTheme}>Toggle</button>
     </div>
   );
 };
