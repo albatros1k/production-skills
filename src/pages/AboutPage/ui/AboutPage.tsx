@@ -1,9 +1,10 @@
 import { FC, Fragment } from 'react';
+import { useTranslation } from 'react-i18next';
 
-interface AboutPageProps {}
+const AboutPage: FC = () => {
+  const { t } = useTranslation('about');
 
-const AboutPage: FC<AboutPageProps> = ({}) => {
-  return <Fragment>AboutPage</Fragment>;
+  return <Fragment>{t('about_page')}</Fragment>;
 };
 
 export default AboutPage;

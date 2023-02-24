@@ -1,9 +1,11 @@
 import { FC, Fragment } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface MainPageProps {}
 
 const MainPage: FC<MainPageProps> = ({}) => {
-  return <Fragment>MainPage</Fragment>;
+  const { t } = useTranslation('main');
+  return <Fragment>{t('main_page')}</Fragment>;
 };
 
 export default MainPage;
