@@ -3,7 +3,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 import { BuildOptions } from './types/config';
 
-export function buildLoaders({ isDev, paths }: BuildOptions): webpack.RuleSetRule[] {
+export function buildLoaders({ isDev }: BuildOptions): webpack.RuleSetRule[] {
   const imgLoader: webpack.RuleSetRule = {
     test: /\.(png|jpg|jpeg|gif|woff)$/i,
     type: 'asset/resource',

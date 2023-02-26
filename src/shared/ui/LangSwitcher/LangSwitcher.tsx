@@ -20,6 +20,7 @@ export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
   const changeLang = () => {
     i18n.changeLanguage(i18n.language === Languages.RU ? Languages.EN : Languages.RU);
   };
+
   return (
     <Button onClick={changeLang} className={classNames(cls.LangSwitcher, {}, [className])} theme={ThemeButton.CLEAR}>
       {t('lang')}
