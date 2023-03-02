@@ -1,4 +1,6 @@
 {
   "lang": "Language",
-  "not_found": "Not found"
+  "not_found": "Not found",
+  "error_message": "Some error has occured",
+  "update_page": "Update page"
 }
