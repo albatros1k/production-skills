@@ -1,9 +1,9 @@
 import { addDecorator } from '@storybook/react';
+import 'loki/configure-react';
 
 import { StyleDecorator } from '../../src/shared/config/storybook/styleDecorators/StyleDecorator';
 import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator/RouterDecorator';
-import { i18nDecorator } from '../../src/shared/config/storybook/i18nDecorator/i18nDecorator';
 import { Theme } from '../../src/app/providers/ThemeProvider/index';
 
 export const parameters = {
@@ -19,4 +19,3 @@ export const parameters = {
 addDecorator(StyleDecorator);
 addDecorator(ThemeDecorator(Theme.LIGHT));
 addDecorator(RouterDecorator);
-// addDecorator(i18nDecorator);

@@ -16,7 +16,7 @@ export default ({ config }: { config: webpack.Configuration }) => {
   config.resolve?.extensions?.push('.ts', '.tsx');
 
   if (config.module && config.module.rules) {
-    const newRules = config.module?.rules?.map((rule) => {
+    const newRules = config.module?.rules?.map((rule: any) => {
       if (/svg/.test(rule.test as string)) {
         return { ...rule, exclude: /.svg$/i };
       }
