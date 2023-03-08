@@ -3,6 +3,12 @@
   "rules": {
     "indentation": 2,
     "selector-class-pattern": null,
-    "string-quotes": "single"
+    "string-quotes": "single",
+    "rule-empty-line-before": [
+      "always",
+      {
+        "ignore": ["after-comment", "first-nested", "inside-block"]
+      }
+    ]
   }
 }
