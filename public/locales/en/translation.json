@@ -1,6 +1,7 @@
 {
-  "lang": "Language",
+  "lang": "English",
   "not_found": "Not found",
   "error_message": "Some error has occured",
-  "update_page": "Update page"
+  "update_page": "Update page",
+  "en": "En"
 }

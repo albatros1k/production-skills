@@ -11,9 +11,10 @@ export enum Languages {
 
 interface LangSwitcherProps {
   className?: string;
+  short?: boolean;
 }
 
-export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
+export const LangSwitcher: FC<LangSwitcherProps> = ({ className, short }) => {
   const { t, i18n } = useTranslation();
 
   const changeLang = async () => {
@@ -22,7 +23,7 @@ export const LangSwitcher: FC<LangSwitcherProps> = ({ className }) => {
 
   return (
     <Button onClick={changeLang} className={classNames('', {}, [className])} theme={ThemeButton.CLEAR}>
-      {t('lang')}
+      {t(short? 'en':'lang')}
     </Button>
   );
 };
