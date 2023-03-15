@@ -9,8 +9,6 @@ import { PageLoader } from 'widgets/PageLoader/ui/PageLoader';
 
 import { classNames } from 'shared/lib/classNames/classNames';
 
-import 'app/styles/index.scss';
-
 const App: FC = () => {
   const { theme } = useTheme();
 

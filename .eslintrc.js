@@ -10,7 +10,14 @@ module.exports = {
     jest: true,
     node: true,
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:i18next/recommended', 'plugin:storybook/recommended'],
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:i18next/recommended',
+    'plugin:storybook/recommended',
+    'plugin:react-hooks/recommended',
+  ],
   overrides: [
     {
       files: ['**/src/**/*.test.{ts,tsx}'],
@@ -24,7 +31,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint', 'i18next'],
+  plugins: ['react', '@typescript-eslint', 'i18next', 'react-hooks'],
   rules: {
     'react/display-name': 'off',
     indent: ['error', 2],
@@ -60,6 +67,8 @@ module.exports = {
         ignoreAttribute: ['data-testid', 'className', 'to'],
       },
     ],
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error',
   },
   globals: {
     __IS_DEV__: true,
