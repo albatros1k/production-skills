@@ -69,6 +69,7 @@ module.exports = {
     ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'error',
+    '@typescript-eslint/no-var-requires': 0,
   },
   globals: {
     __IS_DEV__: true,
