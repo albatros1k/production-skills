@@ -19,8 +19,6 @@ export const Modal: FC<ModalProps> = ({ className, children, isOpen, onClose }) 
 
   const timerRef = useRef<ReturnType<typeof setTimeout>>();
 
-  console.log(isOpen, 'isOpen');
-
   const closeHandler = useCallback(() => {
     if (onClose) {
       setIsClosing(true);
