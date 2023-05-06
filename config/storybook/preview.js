@@ -4,6 +4,7 @@ import 'loki/configure-react';
 import { StyleDecorator } from '../../src/shared/config/storybook/styleDecorators/StyleDecorator';
 import { ThemeDecorator } from '../../src/shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { RouterDecorator } from '../../src/shared/config/storybook/RouterDecorator/RouterDecorator';
+import { TranslationDecorator } from '../../src/shared/config/storybook/TranslationDecorator/TranslationDecorator';
 import { Theme } from '../../src/app/providers/ThemeProvider/index';
 
 export const parameters = {
@@ -19,3 +20,4 @@ export const parameters = {
 addDecorator(StyleDecorator);
 addDecorator(ThemeDecorator(Theme.LIGHT));
 addDecorator(RouterDecorator);
+addDecorator(TranslationDecorator);

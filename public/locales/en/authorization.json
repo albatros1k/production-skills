@@ -1,4 +1,6 @@
 {
   "enter_username": "Enter login",
-  "enter_password": "Enter password"
+  "enter_password": "Enter password",
+  "auth_form": "Authorization form",
+  "wrong_auth": "You entered an incorrect username or password"
 }
