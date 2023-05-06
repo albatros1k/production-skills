@@ -4,5 +4,8 @@
   "error_message": "Some error has occured",
   "update_page": "Update page",
   "en": "En",
-  "login": "Login"
+  "login": "Login",
+  "auth_form": "Authorization form",
+  "wrong_auth": "You entered an incorrect username or password",
+  "logout": "Logout"
 }
